@@ -5,4 +5,6 @@ Would have to create a solution on how to add meshes without replacing default f
 
 ## Future planned updates:
 
-Fix images/icons for existing functions in the game (such as liquor factory having bakery icons) Fix images/icons that have the 'wrong' color compared to what is the norm in the game (silk/rayon in rayon plant being purple, instead of beige).
+Fix images/icons for existing functions in the game (such as liquor factory having bakery icons) 
+
+Fix images/icons that have the 'wrong' color compared to what is the norm in the game (silk/rayon in rayon plant being purple, instead of beige).
