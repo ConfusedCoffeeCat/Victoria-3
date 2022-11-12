@@ -23,6 +23,8 @@ Industries would have half infrastructure cost, input and output, employment and
 
 Evaluate if the AI performs better with smaller buildings when their decision making has smaller consequences for each decision. Faster feedback for each building.
 
+Currently the industries will benefit more from throughput due to them being double the size (might consider adjusting throughput to take into account for higher levels of industries).
+
 (Not going to change resource buildings since that would also have to change the max size of all the regions on the map, it would have to be adjusted at the same time as a big resource overhaul mod).
 
 # Potential future projects.
