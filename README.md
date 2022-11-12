@@ -19,6 +19,8 @@ Potentially game breaking (although in my limited tests thus far the AI does bui
 
 # Half-sized industries (in process)
 
+Combines the two mods above, but the industries are halved in sized, doubled in numbers.
+
 Industries would have half infrastructure cost, input and output, employment and construction cost etc. 
 
 Evaluate if the AI performs better with smaller buildings when their decision making has smaller consequences for each decision. Faster feedback for each building.
