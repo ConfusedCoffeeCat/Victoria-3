@@ -11,16 +11,29 @@ Fix images/icons for existing functions in the game (such as liquor factory havi
 
 Fix images/icons that have the 'wrong' color compared to what is the norm in the game (silk/rayon in rayon plant being purple, instead of beige).
 
-# Resources separated
-Separate resource buildings - A logging camp that produces hardwood
+# Original industries separated (In the works, not uploaded yet)
 
-Potatoes split from Rye Farm. 
+Original factories only produce one goods (Secondary goods and production chains removed). Shipyard excluded. 
 
-Apple Orchards split from Rye farms etc.
+Potentially game breaking (although in my limited tests thus far the AI does build the original and the new industries), has to be evaluated (AI behavior and other files might need to be changed).
+
+# Resources separated (planned)
+Separate resource buildings.
+
+Hardwood logging camp, produces hardwood (might have to be combined with limits on where it can be built to match tropical wood from original victoria 2)
+
+Potatoes split from Rye Farm (might need potatoes as its own resource for it to make sense). 
+
+'Fruit Orchard' (As an alternative to Apple/Citrus/Fig Orchards) split from Rye/Maize/Wheat/Rice/Millet farms etc. (Creating one 'fruit orchard' instead of  three identical extra buildings that does the exact same thing) (might need some extra logic in regards to placement if it's done instead of three buildings that inherits the same logic as the building they're split from).
+
+Splitting off vineyard as a separate building (same placement rules as for Wheat farm?).
 
 # Potential future projects.
-Potentially a separate mod that edits the existing buildings in the game and removes the secondary goods from them
 
-Potentially game breaking with current AI behavior.
+Half-sized industries. 
 
-Would potentially have to change *a lot* of other files to make it work.
+Industries would have half infrastructure cost, input and output, employment and construction cost. 
+
+Evaluate if the AI performs better with smaller buildings when their decision making has smaller consequences for each decision. Faster feedback for each building.
+
+(Not going to change resource buildings since that would also have to change the max size of all the regions on the map, it would have to be adjusted at the same time as a big resource overhaul mod).
