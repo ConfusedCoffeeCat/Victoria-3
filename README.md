@@ -13,7 +13,7 @@ Fix images/icons that have the 'wrong' color compared to what is the norm in the
 
 # Original industries separated
 
-Original factories only produce one goods (Secondary goods and production chains removed), overwrites default industries. Shipyard excluded. 
+Original factories only produce one goods (Secondary goods and production chains removed), overwrites default industries. Shipyard excluded. Has to be used together with 'Buildings separated'.
 
 Potentially game breaking (although in my limited tests thus far the AI does build the original and the new industries), has to be evaluated (AI behavior and other files might need to be changed).
 
