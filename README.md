@@ -11,11 +11,21 @@ Fix images/icons for existing functions in the game (such as liquor factory havi
 
 Fix images/icons that have the 'wrong' color compared to what is the norm in the game (silk/rayon in rayon plant being purple, instead of beige).
 
-# Original industries separated (In the works, not uploaded yet)
+# Original industries separated
 
-Original factories only produce one goods (Secondary goods and production chains removed). Shipyard excluded. 
+Original factories only produce one goods (Secondary goods and production chains removed), overwrites default industries. Shipyard excluded. 
 
 Potentially game breaking (although in my limited tests thus far the AI does build the original and the new industries), has to be evaluated (AI behavior and other files might need to be changed).
+
+# Half-sized industries (in process)
+
+Industries would have half infrastructure cost, input and output, employment and construction cost etc. 
+
+Evaluate if the AI performs better with smaller buildings when their decision making has smaller consequences for each decision. Faster feedback for each building.
+
+(Not going to change resource buildings since that would also have to change the max size of all the regions on the map, it would have to be adjusted at the same time as a big resource overhaul mod).
+
+# Potential future projects.
 
 # Resources separated (planned)
 Separate resource buildings.
@@ -27,13 +37,3 @@ Potatoes split from Rye Farm (might need potatoes as its own resource for it to 
 'Fruit Orchard' (As an alternative to Apple/Citrus/Fig Orchards) split from Rye/Maize/Wheat/Rice/Millet farms etc. (Creating one 'fruit orchard' instead of  three identical extra buildings that does the exact same thing) (might need some extra logic in regards to placement if it's done instead of three buildings that inherits the same logic as the building they're split from).
 
 Splitting off vineyard as a separate building (same placement rules as for Wheat farm?).
-
-# Potential future projects.
-
-Half-sized industries. 
-
-Industries would have half infrastructure cost, input and output, employment and construction cost. 
-
-Evaluate if the AI performs better with smaller buildings when their decision making has smaller consequences for each decision. Faster feedback for each building.
-
-(Not going to change resource buildings since that would also have to change the max size of all the regions on the map, it would have to be adjusted at the same time as a big resource overhaul mod).
