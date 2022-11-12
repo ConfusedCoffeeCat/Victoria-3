@@ -1,5 +1,5 @@
 # Original buildings modified
-Has to be used together with Buildings Separated to work
+Has to be used together with 'Buildings Separated' to work. Overwrites default industries.
 
 Considerations to do:
 Adjust trade-routes that are now zero worth, alternatively add/adjust buildings that produce the removed goods in associated provinces from where they were removed.
