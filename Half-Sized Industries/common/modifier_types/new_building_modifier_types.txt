@@ -1,0 +1,5 @@
+﻿
+building_input_furniture_add = {
+	good = yes
+	percent = no
+}

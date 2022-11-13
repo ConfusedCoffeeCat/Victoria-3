@@ -1,0 +1,14 @@
+﻿# New building values created for half-sized (half cost) industries.
+
+construction_cost_half_very_high = 300
+construction_cost_half_high = 225
+construction_cost_half_medium = 150
+construction_cost_half_low = 75
+construction_cost_half_very_low = 25
+
+
+# construction_cost_half_very_high = 600 / 2 = 300
+# construction_cost_half_high = 450 / 2 = 225
+# construction_cost_half_medium = 300 / 2 = 150
+# construction_cost_half_low = 150 / 2 = 75
+# construction_cost_half_very_low = 50 / 2 = 25

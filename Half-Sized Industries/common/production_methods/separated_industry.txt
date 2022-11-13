@@ -1,0 +1,1767 @@
+﻿# MANUFACTURING INDUSTRIES - Production Methods
+
+# Third file
+# Equivalent game file '\game\common\production_methods\01_industry.txt'
+
+# Production methods in new production industries
+# Calculated break-even points and adjusted input-outputs accordingly
+# Base-value for goods from '\game\common\goods\00_goods.txt'
+# Calculated according to 'base value' and theoretical profit in the base configuration.
+# I.e. an explosive plant is going to, 'in theory', have about the same profitability as a chemical plant
+# Theoretical profitability lowered (at least initally) for some factories/processes since it might be too
+# much of an advantage being able to produce the goods directly
+
+# Labor is currently, more or less, the same as the 'base' production for the building it is replacing.
+# Ownership info split into a separate file 'separated_ownership'
+
+# Future potential changes:
+# Potentially lock certain combinations with 'unlocking_production_methods', see steamers for example.
+
+# Profit values won't be accurate.
+# Profit values are legacy from original balancing and won't be adjusted here. See 'buildings separated' for up to date values.
+# Removed '#xBase-cost = '
+
+# Input values will be rounded down for increased profitability
+# Output values will be rounded up for increased profitability
+
+#####
+
+# Explosives Plant
+	# Leblanc process is the 'base' for explosives production.
+	pm_explosives_base = {
+		texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
+		pollution_generation = 2
+		# Halfed pollution from 5 to 2
+
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_coal_add = 10
+				# Halved from 20 to 10
+				building_input_fertilizer_add = 10
+				# Halved from 20 to 10
+
+				# output goods
+				building_output_explosives_add = 20
+				# Halved from 40 to 20
+			}
+				# Profit, 800 (same as 800 for pm_artificial_fertilizers)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 1500
+				# Halved from 3000 to 1500
+				building_employment_machinists_add = 500
+				# Halved from 1000 to 500
+				building_employment_engineers_add = 250
+				# Halved from 500 to 250
+			}
+		}
+	}
+
+	# Created to adjust for profitability to account for improvement in chemical factory with research
+	pm_explosives_improved = {
+		texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
+		pollution_generation = 2
+		# Halfed pollution from 5 to 2
+
+		unlocking_technologies = {
+			nitrogen_fixation
+		}
+
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_coal_add = 18
+				# Halved from 35 to 17
+				building_input_fertilizer_add = 18
+				# Halved from 35 to 17
+
+				# output goods
+				building_output_explosives_add = 40
+				# Halved from 80 to 40
+			}
+
+			# Profit, 1900 (lower than the 2000 for pm_nitrogen_fixation)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 500
+				# Halved from 1000 to 500
+				building_employment_machinists_add = 1000
+				# Halved from 2000 to 1000
+				building_employment_engineers_add = 750
+				# Halved from 1500 to 750
+			}
+		}
+	}
+
+	pm_explosives_leblanc_process = {
+		texture = "gfx/interface/icons/production_method_icons/leblanc_process.dds"
+		pollution_generation = 5
+		# Halfed pollution from 10 to 5
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_coal_add = 7
+				# Halved from 15 to 7
+				building_input_fertilizer_add = 7
+				# Halved from 15 to 7
+
+				# output goods
+				building_output_explosives_add = 10
+				# Halved from 20 to 10
+			}
+			
+			# Profit, 100 (same as 100 for pm_leblanc_process)
+			level_scaled = {
+				# employment
+				building_employment_engineers_add = 125
+				# Halved from 250 to 125
+			}
+		}
+	}
+
+	pm_explosives_ammonia_soda_process = {
+		texture = "gfx/interface/icons/production_method_icons/ammonia_soda_process.dds"
+		pollution_generation = 7
+		# Halfed pollution from 15 to 7
+
+		unlocking_technologies = {
+			nitroglycerin
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_coal_add = 7
+				# Halved from 15 to 7
+				building_input_fertilizer_add = 7
+				# Halved from 15 to 7
+				building_input_sulfur_add = 7
+				# Halved from 15 to 7
+
+				# output goods
+				building_output_explosives_add = 20
+				# Halved from 40 to 20
+			}
+
+			# Profit, 350 (same as 350 for pm_ammonia-soda_process)
+			level_scaled = {
+				# employment
+				building_employment_engineers_add = 250
+				# Halved from 500 to 250
+			}
+		}
+	}
+
+	pm_explosives_vacuum_evaporation = {
+		texture = "gfx/interface/icons/production_method_icons/vaccum_evaporation.dds"
+		pollution_generation = 10
+		# Halfed pollution from 20 to 10
+		
+		unlocking_technologies = {
+			dynamite
+		}
+
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_coal_add = 7
+				# Halved from 15 to 7
+				building_input_fertilizer_add = 15
+				# Halved from 30 to 15
+				building_input_sulfur_add = 15
+				# Halved from 30 to 15
+
+				# output goods
+				building_output_explosives_add = 35
+				# Halved from 70 to 35
+			}
+
+			# Profit, 650 (same as 650 for pm_vacuum_evaporation)
+			level_scaled = {
+				# employment
+				building_employment_engineers_add = 375
+				# Halved from 750 to 375
+			}
+		}
+	}
+
+	pm_explosives_brine_electrolysis = {
+		texture = "gfx/interface/icons/production_method_icons/vaccum_brine_electrolysis.dds"
+		pollution_generation = 12
+		# Halfed pollution from 25 to 12
+
+		unlocking_technologies = {
+			electrical_capacitors
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_coal_add = 7
+				# Halved from 15 to 7
+				building_input_fertilizer_add = 25
+				# Halved from 50 to 25
+				building_input_sulfur_add = 15
+				# Halved from 30 to 15
+				building_input_electricity_add = 7
+				# Halved from 15 to 7
+
+				# output goods
+				building_output_explosives_add = 50
+				# Halved from 100 to 50
+			}
+
+			# Profit, 1100 (same as 1100 for pm_brine_electrolysis)
+			level_scaled = {
+				# employment
+				building_employment_engineers_add = 500
+				# Halved from 1000 to 500
+			}
+		}
+	}
+
+# Luxury Textile Mills
+	# Originally had clothes as input, but had to be lowered / removed due to the AI having a major clothes deficit.
+	pm_luxury_handsewn_clothes = {
+		texture = "gfx/interface/icons/production_method_icons/handsewn_clothes.dds"
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_fabric_add = 17
+				# Halved from 35 to 17
+				building_input_silk_add = 10
+				# Halved from 20 to 10
+				# building_input_clothes_add =  0
+
+				# output goods
+				building_output_luxury_clothes_add = 30
+				# Halved from 60 to 30
+			}
+
+			# Profit, 300 (lower than 550 for pm_handsewn_clothes)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 2250
+				# Halved from 4500 to 2250
+			}
+		}
+	}
+
+	pm_luxury_dye_workshops = {
+		texture = "gfx/interface/icons/production_method_icons/dye_workshops.dds"
+		
+		unlocking_technologies = { lathe }
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_fabric_add = 20
+				# Halved from 40 to 20
+				building_input_silk_add = 5
+				# Halved from 10 to 5
+				# building_input_clothes_add =  0
+				building_input_dye_add = 2
+				# Halved from 5 to 2
+				
+				# output goods
+				building_output_luxury_clothes_add = 40
+				# Halved from 80 to 40
+			}
+
+			# Profit, 600  (lower than 800 for pm_dye_workshops)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 1500
+				# Halved from 3000 to 1500
+				building_employment_machinists_add = 250
+				# Halved from 500 to 250
+			}
+		}
+	}			
+
+	pm_luxury_sewing_machines = {
+		texture = "gfx/interface/icons/production_method_icons/sewing_machines.dds"
+		
+		unlocking_technologies = {
+			mechanized_workshops
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_fabric_add = 50
+				# Halved from 100 to 50
+				building_input_silk_add = 22
+				# Halved from 45 to 22
+				# building_input_clothes_add =  0
+				building_input_dye_add = 7
+				# Halved from 15 to 7
+				building_input_tools_add = 7
+				# Halved from 15 to 7
+				
+				# output goods
+				building_output_luxury_clothes_add = 50
+				# Halved from 100 to 50
+			}
+
+			# Profit, 1000  (lower than 1200 for pm_sewing_machines)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 1750
+				# Halved from 3500 to 1750
+				building_employment_machinists_add = 375
+				# Halved from 750 to 375
+				building_employment_engineers_add = 125
+				# Halved from 250 to 125
+			}
+		}
+	}
+
+	pm_luxury_electric_sewing_machines = {
+		texture = "gfx/interface/icons/production_method_icons/electric_sewing_machines.dds"
+		
+		unlocking_technologies = {
+			electrical_capacitors
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_fabric_add = 67
+				# Halved from 135 to 67
+				building_input_silk_add = 30
+				# Halved from 60 to 30
+				# building_input_clothes_add =  0
+				building_input_dye_add = 12
+				# Halved from 25 to 12
+				building_input_tools_add = 5
+				# Halved from 10 to 5
+				building_input_electricity_add = 5
+				# Halved from 10 to 5
+				
+				# output goods
+				building_output_luxury_clothes_add = 70
+				# Halved from 140 to 70
+			}
+
+			# Profit, 1300  (lower than 1500 for pm_electric_sewing_machines)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 1500
+				# Halved from 3000 to 1500
+				building_employment_machinists_add = 500
+				# Halved from 1000 to 500
+				building_employment_engineers_add = 250
+				# Halved from 500 to 250
+			}
+		}
+	}
+
+	pm_craftsman_real_luxury_sewing = {
+		texture = "gfx/interface/icons/production_method_icons/craftsman_sewing.dds"
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_fabric_add = 7
+				# Halved from 15 to 7
+				building_input_silk_add = 7	
+				# Halved from 15 to 7
+				# building_input_clothes_add = 0
+				
+				# output goods
+				building_output_luxury_clothes_add = 10
+				# Halved from 20 to 10
+			}
+
+			# Profit, 300  (lower than 400 for pm_craftsman_sewing)		
+			level_scaled = {
+				building_employment_shopkeepers_add = 250
+				# Halved from 500 to 250
+			}					
+		}
+	}
+
+	pm_luxury_elastics = {
+		texture = "gfx/interface/icons/production_method_icons/elastics.dds"
+
+		unlocking_technologies = {
+			vulcanization
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_fabric_add = 7
+				# Halved from 15 to 7
+				building_input_silk_add = -7
+				# Halved from 15 to 7
+				# building_input_clothes_add = 0
+				building_input_rubber_add = 20
+				# Halved from 40 to 20
+				
+				# output goods
+				building_output_luxury_clothes_add = 18
+				# Halved from 35 to 18
+			}
+
+			# Profit, 800  (lower than 900 for pm_elastics)			
+			level_scaled = {
+				# employment
+				building_employment_shopkeepers_add = 500
+				# Halved from 1000 to 500
+			}						
+		}
+	}
+
+	# Unchanged from base
+	pm_traditional_looms_luxury_textile_mills = {
+		texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
+	}
+	
+	# Unchanged from base
+	pm_mechanized_looms_luxury_textile_mills = {
+		texture = "gfx/interface/icons/production_method_icons/mechanized_looms.dds"
+		
+		unlocking_technologies = {
+			mechanized_workshops
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_tools_add = 2
+				# Halved from 5 to 2
+			}
+	
+			level_scaled = {
+				# profit = -200 (break-even when annual laborer wage > 6.9)
+				building_employment_laborers_add = -750
+				# Halved from 1500 to 750
+			}
+		}
+	}
+	
+	# Unchanged from base
+	pm_automatic_power_looms_luxury_textile_mills = {
+		texture = "gfx/interface/icons/production_method_icons/automatic_power_looms.dds"
+		
+		unlocking_technologies = {
+			electrical_capacitors
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_tools_add = 2
+				# Halved from 5 to 2
+				building_input_electricity_add = 5
+				# Halved from 10 to 5
+			}
+	
+			level_scaled = {
+				# profit = -500 (break-even when annual laborer wage > 10.4)
+				building_employment_laborers_add = -1250
+				# Halved from 2500 to 1250
+			}
+		}
+	}
+	
+# Luxury Furniture Manufacturing
+	# Originally had furniture as input, but had to be lowered / removed due to the AI having a major  furniture deficit.
+	pm_luxury_handcrafted_furniture = {
+		texture = "gfx/interface/icons/production_method_icons/furniture_handicraft.dds"
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_wood_add = 22
+				# Halved from 45 to 22
+				building_input_fabric_add = 5
+				# Halved from 10 to 5
+				building_input_hardwood_add = 10 
+				# Halved from 20 to 10
+				# building_input_furniture_add = 0
+				
+				# output goods
+				building_output_luxury_furniture_add = 20
+				# Halved from 40 to 20
+			}
+
+			# Profit, 500  (lower than 550 for pm_handcrafted_furniture)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 2250
+				# Halved from 4500 to 2250
+			}
+		}
+	}		
+
+	pm_luxury_lathe = {
+		texture = "gfx/interface/icons/production_method_icons/lathes.dds"
+		
+		unlocking_technologies = {
+			lathe
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_wood_add = 27
+				# Halved from 55 to 27
+				building_input_fabric_add = 7
+				# Halved from 15 to 7
+				building_input_tools_add = 2
+				# Halved from 5 to 2
+				building_input_hardwood_add = 17
+				# Halved from 35 to 17
+				# building_input_furniture_add = 0
+				
+				# output goods
+				building_output_luxury_furniture_add = 30
+				# Halved from 60 to 30
+			}
+
+			# Profit, 900  (lower than 950 for pm_lathe)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 1625
+				# Halved from 3250 to 1625
+				building_employment_machinists_add = 500
+				# Halved from 1000 to 500
+				building_employment_engineers_add = 125
+				# Halved from 250 to 125
+			}
+		}
+	}
+
+	pm_luxury_mechanized_workshops = {
+		texture = "gfx/interface/icons/production_method_icons/mechanized_workshops.dds"
+		
+		pollution_generation = 2
+		# Halfed pollution from 5 to 2
+		
+		unlocking_technologies = {
+			mechanized_workshops
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_wood_add = 40
+				# Halved from 80 to 40
+				building_input_fabric_add = 10
+				# Halved from 20 to 10
+				building_input_tools_add = 7
+				# Halved from 15 to 7
+				building_input_hardwood_add = 30
+				# Halved from 60 to 30
+				# building_input_furniture_add = 0
+				
+				# output goods
+				building_output_luxury_furniture_add = 30
+				# Halved from 60 to 30
+			}
+
+			# Profit, 1600  (lower than 1700 for pm_mechanized_workshops)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 1500
+				# Halved from 3000 to 1500
+				building_employment_machinists_add = 625
+				# Halved from 1250 to 625
+				building_employment_engineers_add = 375
+				# Halved from 750 to 375
+			}
+		}
+	}
+
+	pm_real_luxury_furniture = {
+		texture = "gfx/interface/icons/production_method_icons/luxury_furniture.dds"
+			
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_wood_add = 7
+				# Halved from 15 to 7
+				building_input_hardwood_add = 5
+				# Halved from 10 to 5
+				# building_input_furniture_add = 0
+
+				# output goods
+				building_output_luxury_furniture_add = 10
+				# Halved from 20 to 10
+			}
+		
+			# Profit, 500 (lower than 1000 for pm_luxury_furniture)	
+			level_scaled = {
+				building_employment_shopkeepers_add = 250
+				# Halved from 500 to 250
+			}						
+		}
+	}
+
+	pm_luxury_precision_tools = {
+		texture = "gfx/interface/icons/production_method_icons/precision_tools.dds"
+			
+		unlocking_technologies = {
+			mechanical_tools
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_wood_add = -5
+				# Halved from -10 to 5
+				building_input_hardwood_add = 10 
+				# Halved from 20 to 10
+				# building_input_furniture_add = 0
+				building_input_tools_add = 12
+				# Halved from 25 to 12
+
+				# output goods
+				building_output_luxury_furniture_add = 20
+				# Halved from 40 to 20
+			}
+
+			# Profit, 800  (lower than 1000 for pm_precision_tools)	
+			level_scaled = {
+				# employment
+				building_employment_shopkeepers_add = 500
+				# Halved from 1000 to 500
+			}						
+		}
+	}
+
+	# Unchanged from base
+	pm_watertube_boiler_building_luxury_furniture_manufacturies = {
+		texture = "gfx/interface/icons/production_method_icons/watertube_boiler.dds"
+		
+		pollution_generation = 2
+		# Halfed pollution from 5 to 2
+		
+		unlocking_technologies = {
+			watertube_boiler
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_tools_add = 2
+				# Halved from 5 to 2
+				building_input_coal_add = 2
+				# Halved from 5 to 2
+			}
+	
+			level_scaled = {
+				building_employment_laborers_add = -750
+				# Halved from 1500 to 750
+			}
+		}
+	}
+	
+	# Unchanged from base
+	pm_rotary_valve_engine_building_luxury_furniture_manufacturies = {
+		texture = "gfx/interface/icons/production_method_icons/rotary_valve_engine.dds"
+		
+		pollution_generation = 5
+		# Halfed pollution from 10 to 5
+		
+		unlocking_technologies = {
+			rotary_valve_engine
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_tools_add = 2
+				# Halved from 5 to 2
+				building_input_coal_add = 5
+				# Halved from 10 to 5
+			}
+	
+			level_scaled = {
+				building_employment_laborers_add = -1000
+				# Halved from 2000 to 1000
+			}
+		}
+	}
+	
+	# Unchanged from base
+	pm_assembly_lines_building_luxury_furniture_manufacturies = {
+		texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
+		
+		pollution_generation = 5
+		# Halfed pollution from 10 to 5
+		
+		unlocking_technologies = {
+			conveyors
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_tools_add = 2
+				# Halved from 5 to 2
+				building_input_oil_add = 2
+				# Halved from 5 to 2
+				building_input_electricity_add = 2
+				# Halved from 5 to 2
+			}
+	
+			level_scaled = {
+				building_employment_laborers_add = -1500
+				# Halved from 3000 to 1500
+			}
+		}
+	}
+	
+# Porcelain Factory
+	# Temporary image until a better one is created.
+	pm_porcelain_base = {
+		texture = "gfx/interface/icons/production_method_icons/porcelain_base.dds"
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_wood_add = 15
+				# Halved from 30 to 15
+				building_input_dye_add = 7
+				# Halved from 15 to 7
+				
+				# output goods
+				building_output_porcelain_add = 10
+				# Halved from 20 to 10
+			}
+
+			# Profit, 200 (lower than 600 for pm_forest_glass)	
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 2250
+				# Halved from 4500 to 2250
+			}
+		}
+	}		
+
+	# Temporary image until a better one is created.
+	pm_porcelain_middle = {
+		texture = "gfx/interface/icons/production_method_icons/porcelain_medium.dds"
+		pollution_generation = 2
+		# Halfed pollution from 5 to 2
+		
+		unlocking_technologies = { 
+			lathe 
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_wood_add = 7
+				# Halved from 15 to 7
+				building_input_lead_add = 7
+				# Halved from 15 to 7
+				building_input_dye_add = 7
+				# Halved from 15 to 7
+				
+				# output goods
+				building_output_porcelain_add = 15
+				# Halved from 30 to 15
+			}
+
+			# Profit, 600 (lower than 800 for pm_leaded_glass)	
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 2000
+				# Halved from 4000 to 2000
+				building_employment_machinists_add = 250
+				# Halved from 500 to 250
+			}
+		}
+	}
+
+	# No equivalent of pm_crystal_glass
+
+	# Temporary image until a better one is created.
+	pm_porcelain_highend = {
+		texture = "gfx/interface/icons/production_method_icons/porcelain_plus.dds"
+		pollution_generation = 7
+		# Halfed pollution from 15 to 7
+		
+		unlocking_technologies = {
+			plastics
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_lead_add = 17
+				# Halved from 35 to 17
+				building_input_oil_add = 12
+				# Halved from 25 to 12
+				building_input_dye_add = 7
+				# Halved from 15 to 7
+				
+				# output goods
+				building_output_porcelain_add = 50
+				# Halved from 100 to 50
+			}
+
+			# Profit, 1000 (lower than 2000 for pm_houseware_plastics)	
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 1250
+				# Halved from 2500 to 1250
+				building_employment_machinists_add = 625
+				# Halved from 1250 to 625
+				building_employment_engineers_add = 375
+				# Halved from 750 to 375
+			}
+		}
+	}
+	
+	# Flipped image for consistency in which direction things point.
+	pm_real_ceramics = {
+		texture = "gfx/interface/icons/production_method_icons/ceramics_flipped.dds"
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_dye_add = 7
+				# Halved from 15 to 7
+
+				# output goods		
+				building_output_porcelain_add = 5
+				# Halved from 10 to 5
+			}
+		
+			# Profit, 100 (lower than 350 for pm_ceramics)		
+			level_scaled = {
+				building_employment_shopkeepers_add = 250
+				# Halved from 500 to 250
+			}						
+		}
+	}
+
+	pm_real_bone_china = {
+		texture = "gfx/interface/icons/production_method_icons/bone_china.dds"
+		
+		unlocking_technologies = {
+			chemical_bleaching
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_dye_add = 12
+				# Halved from 25 to 12
+				
+				# output goods
+				building_output_porcelain_add = 13
+				# Halved from 25 to 13
+			}
+		
+			# Profit, 750 (lower than 800 for pm_bone_china)		
+			level_scaled = {
+				# employment
+				building_employment_shopkeepers_add = 500
+				# Halved from 1000 to 500
+			}					
+		}														
+	}
+
+	# Image changed to one for 'no_automation'
+	pm_manual_porcelain_production = {
+		texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
+	}
+
+	# Temporary image until a better one is created.
+	pm_automated_porcelain_production = {
+		texture = "gfx/interface/icons/production_method_icons/automated_porcelain.dds"
+		pollution_generation = 2
+		# Halfed pollution from 5 to 2
+		
+		unlocking_technologies = {
+			automatic_bottle_blowers
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_tools_add = 2
+				# Halved from 5 to 2
+				building_input_oil_add = 5	
+				# Halved from 10 to 5
+			}
+
+			# Profit, -600 (unchanged from pm_automatic_bottle_blowers)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = -1250
+				# Halved from 2500 to 1250
+			}
+		}
+	}
+
+# Automobile Industry
+	pm_steam_engines_automobile = {
+		texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
+		
+		pollution_generation = 5
+		# Halfed pollution from 10 to 5
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_steel_add = 7
+				# Halved from 15 to 7
+				building_input_engines_add = 5
+				# Halved from 10 to 5
+				building_input_rubber_add = 5
+				# Halved from 10 to 5
+				building_input_oil_add = 10
+				# Halved from 20 to 10
+				
+				# output goods
+				building_output_automobiles_add = 15
+				# Halved from 30 to 15
+			}
+
+			# Profit, 450 (lower than 900 for pm_steam_engines)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 1250
+				# Halved from 2500 to 1250
+				building_employment_machinists_add = 750
+				# Halved from 1500 to 750
+				building_employment_engineers_add = 250
+				# Halved from 500 to 250
+			}
+		}
+	}
+
+	pm_electric_engines_automobile = {
+		texture = "gfx/interface/icons/production_method_icons/electric_engines.dds"
+		
+		pollution_generation = 2
+		# Halfed pollution from 5 to 2
+		
+		unlocking_technologies = {
+			electric_railway
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_steel_add = 7
+				# Halved from 15 to 7
+				building_input_electricity_add = 12
+				# Halved from 25 to 12	
+				building_input_engines_add = 10
+				# Halved from 20 to 10
+				building_input_rubber_add = 5
+				# Halved from 10 to 5
+				building_input_oil_add = 10
+				# Halved from 20 to 10
+				
+				# output goods
+				building_output_automobiles_add = 25 
+				# Halved from 50 to 25
+			}
+
+			# Profit, 1100 (lower than 1900 for pm_electric_engines)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 1000
+				# Halved from 2000 to 1000
+				building_employment_machinists_add = 750
+				# Halved from 1500 to 750
+				building_employment_engineers_add = 500
+				# Halved from 1000 to 500
+			}
+		}
+	}
+
+	pm_diesel_engines_automobile = {
+		texture = "gfx/interface/icons/production_method_icons/diesel_engines.dds"
+		
+		pollution_generation = 5
+		# Halfed pollution from 10 to 5
+		
+		unlocking_technologies = {
+			compression_ignition
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_steel_add = 10
+				# Halved from 20 to 10
+				building_input_engines_add = 15
+				# Halved from 30 to 15
+				building_input_rubber_add = 5
+				# Halved from 10 to 5
+				building_input_oil_add = 35
+				# Halved from 70 to 35
+				
+				# output goods
+				building_output_automobiles_add = 40
+				# Halved from 80 to 40
+			}
+
+			# Profit, 2000 (lower than 2700 for pm_diesel_engines)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 750
+				# Halved from 1500 to 750
+				building_employment_machinists_add = 750
+				# Halved from 1500 to 750
+				building_employment_engineers_add = 750
+				# Halved from 1500 to 750
+			}
+		}
+	}
+
+	pm_only_automobile_production = {
+		texture = "gfx/interface/icons/production_method_icons/automobiles.dds"
+		pollution_generation = 5
+		# Halfed pollution from 10 to 5
+		
+		unlocking_technologies = { 
+			combustion_engine
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_engines_add = 10
+				# Halved from 20 to 10
+				building_input_rubber_add = 5
+				# Halved from 10 to 5
+				building_input_oil_add = 10
+				# Halved from 20 to 10
+
+				# output goods
+				building_output_automobiles_add = 12
+				# Halved from 25 to 12
+			}
+
+			# Profit, 100 (same as 100 for pm_automobile_production)
+			level_scaled = {
+				# employment
+				building_employment_machinists_add = 500
+				# Halved from 1000 to 500
+				building_employment_engineers_add = 250
+				# Halved from 500 to 250
+			}
+		}
+	}
+
+	# Unchanged from base
+	pm_watertube_boiler_building_automobile_industry = {
+		texture = "gfx/interface/icons/production_method_icons/watertube_boiler.dds"
+		
+		pollution_generation = 2
+		# Halfed pollution from 5 to 2
+		
+		unlocking_technologies = {
+			watertube_boiler
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_tools_add = 2
+				# Halved from 5 to 2
+				building_input_coal_add = 2
+				# Halved from 5 to 2
+			}
+	
+			level_scaled = {
+				building_employment_laborers_add = -250
+				# Halved from 500 to 250
+				building_employment_machinists_add = -250
+				# Halved from 500 to 250
+			}
+		}
+	}
+	
+	# Unchanged from base
+	pm_rotary_valve_engine_building_automobile_industry = {
+		texture = "gfx/interface/icons/production_method_icons/rotary_valve_engine.dds"
+		
+		pollution_generation = 5
+		# Halfed pollution from 10 to 5
+		
+		unlocking_technologies = {
+			rotary_valve_engine
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_tools_add = 2
+				# Halved from 5 to 2
+				building_input_coal_add = 5
+				# Halved from 10 to 5
+			}
+	
+			level_scaled = {
+				building_employment_laborers_add = -500
+				# Halved from 1000 to 500
+				building_employment_machinists_add = -250
+				# Halved from 500 to 250
+			}
+		}
+	}
+	
+	# Unchanged from base
+	pm_assembly_lines_building_automobile_industry = {
+		texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
+		pollution_generation = 7
+		# Halfed pollution from 15 to 7
+		
+		unlocking_technologies = {
+			conveyors
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_tools_add = 2
+				# Halved from 5 to 2
+				building_input_oil_add = 2
+				# Halved from 5 to 2
+				building_input_electricity_add = 2
+				# Halved from 5 to 2
+			}
+	
+			level_scaled = {
+				building_employment_laborers_add = -750
+				# Halved from 1500 to 750
+				building_employment_machinists_add = -250
+				# Halved from 500 to 250
+			}
+		}
+	}
+
+# Artillery Foundry
+	#pm_muskets
+	# Based on cannons input (iron)
+	# Temporary image until a better one is created.
+	pm_artillery_base = {
+		texture = "gfx/interface/icons/production_method_icons/base_artillery.dds"
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_iron_add = 10
+				# Halved from 20 to 10
+				building_input_hardwood_add = 7
+				# Halved from 15 to 7
+				
+				# output goods
+				building_output_artillery_add = 13
+				# Halved from 25 to 13
+			}
+
+			# Profit, 350 (lower than 700 for pm_muskets)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 2000
+				# Halved from 4000 to 2000
+				building_employment_machinists_add = 250
+				# Halved from 500 to 250
+			}
+		}
+	}
+
+	#pm_repeaters
+	# based on smoothbores input (steel instead of iron)
+	# Temporary image until a better one is created.
+	pm_artillery_medium = {
+		texture = "gfx/interface/icons/production_method_icons/medium_artillery.dds"
+		
+		unlocking_technologies = {
+			repeaters
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_steel_add = 17 
+				# Halved from 35 to 17
+				building_input_hardwood_add = 5
+				# Halved from 10 to 5
+				building_input_tools_add = 7
+				# Halved from 15 to 7
+				
+				# output goods
+				building_output_artillery_add = 8
+				# Halved from 15 to 8
+			}
+
+			# Profit, 750 (lower than 1200 for pm_repeaters)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 1000
+				# Halved from 2000 to 1000
+				building_employment_machinists_add = 750
+				# Halved from 1500 to 750
+				building_employment_engineers_add = 500
+				# Halved from 1000 to 500
+			}
+		}
+	}
+
+	#pm_bolt_action_rifles
+	# Temporary image until a better one is created.
+	pm_artillery_high = {
+		texture = "gfx/interface/icons/production_method_icons/high_artillery.dds"
+		
+		unlocking_technologies = {
+			bolt_action_rifles
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_steel_add = 20
+				# Halved from 40 to 20
+				building_input_hardwood_add = 5
+				# Halved from 10 to 5
+				building_input_tools_add = 12
+				# Halved from 25 to 12
+				building_input_oil_add = 5
+				# Halved from 10 to 5
+				
+				# output goods
+				building_output_artillery_add = 38
+				# Halved from 75 to 38
+			}
+
+			# Profit, 1450 (lower than 1900 for pm_bolt_action_rifles)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 500
+				# Halved from 1000 to 500
+				building_employment_machinists_add = 1000
+				# Halved from 2000 to 1000
+				building_employment_engineers_add = 750
+				# Halved from 1500 to 750
+			}
+		}
+	}
+
+	pm_artillery_cannons = {
+		texture = "gfx/interface/icons/production_method_icons/artillery_production.dds"
+		
+		unlocking_technologies = {
+			artillery
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_iron_add = 12
+				# Halved from 25 to 12
+
+				# output goods
+				building_output_artillery_add = 8
+				# Halved from 15 to 8
+			}
+
+			# Profit, 50 (same as 50 for pm_cannons)		
+			level_scaled = {
+				# employment
+				building_employment_machinists_add = 250
+				# Halved from 500 to 250
+			}
+		}
+	}
+
+	pm_artillery_smoothbores = {
+		texture = "gfx/interface/icons/production_method_icons/smoothbores.dds"
+		
+		unlocking_technologies = {
+			shell_gun
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_steel_add = 17
+				# Halved from 35 to 17
+				building_input_hardwood_add = -3
+				# Halved from 5 to 3
+
+				# output goods
+				building_output_artillery_add = 13
+				# Halved from 25 to 13
+			}
+
+			# Profit, 200 (more than 100 for pm_smoothbores)		
+			level_scaled = {
+				# employment
+				building_employment_machinists_add = 250
+				# Halved from 500 to 250
+				building_employment_engineers_add = 125
+				# Halved from 250 to 125
+			}
+		}
+	}
+
+	# Added plus to original image used since it was weird to have the lowest and highest production level to use the same image.
+	pm_artillery_breech_loaders = {
+		texture = "gfx/interface/icons/production_method_icons/artillery_production_plus.dds"
+		
+		unlocking_technologies = {
+			breech_loading_artillery
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_steel_add = 30
+				# Halved from 60 to 30
+				building_input_hardwood_add = -3
+				# Halved from 5 to 3
+
+				# output goods
+				building_output_artillery_add = 23
+				# Halved from 45 to 23
+			}
+
+			# Profit, 350 (more than 50 for pm_breech_loaders)		
+			level_scaled = {
+				# employment
+				building_employment_machinists_add = 250
+				# Halved from 500 to 250
+				building_employment_engineers_add = 250
+				# Halved from 500 to 250
+			}
+		}
+	}
+
+# Rayon Plants - Synthetic silk production
+	# Temporary image until a better one is created.
+	pm_rayon_base_production = {
+		texture = "gfx/interface/icons/production_method_icons/rayon_recolored.dds"
+		
+		pollution_generation = 2
+		# Halfed pollution from 5 to 2
+
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_sulfur_add = 10
+				# Halved from 20 to 10
+				building_input_fertilizer_add = 15
+				# Halved from 30 to 15
+				building_input_wood_add = 20
+				# Halved from 40 to 20
+
+				# output goods
+				building_output_silk_add = 50
+				# Halved from 100 to 50
+			}
+
+			# Profit, 1300 (same as 1300 for pm_dye_production)	
+			level_scaled = {
+				# employment
+				# Adjusted to take into account that pm_rayon isn't included.
+				building_employment_machinists_add = 1000
+				# Halved from 2000 to 1000
+				building_employment_engineers_add = 1250
+				# Halved from 2500 to 1250
+			}
+		}
+	}
+
+	# Radio industry
+	# Temporary image until a better one is created.
+	pm_real_radios = {
+		texture = "gfx/interface/icons/production_method_icons/radios_recolored.dds"
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_iron_add = 7
+				# Halved from 15 to 7
+				building_input_rubber_add = 10
+				# Halved from 20 to 10
+				building_input_lead_add = 10
+				# Halved from 20 to 10
+				building_input_tools_add = 10
+				building_input_electricity_add = 25 
+				# Halved from 50 to 25
+				
+				# output goods
+				building_output_radios_add = 35
+				# Halved from 70 to 35
+			}
+
+			# Profit, 1500 (higher than 1400 of pm_telephones alone, 
+			# lower than 1700 of pm_telephones and pm_radios combined)	
+			level_scaled = {
+				# employment
+				# Adjusted, increased, to take into account that pm_radios isn't included.
+				building_employment_laborers_add = 750
+				# Halved from 1500 to 750
+				building_employment_machinists_add = 1000
+				# Halved from 2000 to 1000
+				building_employment_engineers_add = 750
+				# Halved from 1500 to 750
+			}
+		}
+	}
+
+# Tank Industry
+	# Easy enough to add in a more advanced tank version later on.
+	# Temporary image until a better one is created.
+	pm_real_tank_production = {
+		texture = "gfx/interface/icons/production_method_icons/tanks_recolored.dds"
+
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_engines_add = 10
+				# Halved from 20 to 10
+				building_input_steel_add = 10
+				# Halved from 20 to 10
+				building_input_oil_add = 12
+				# Halved from 25 to 12
+
+				# output goods
+				building_output_tanks_add = 30
+				# Halved from 60 to 30
+			}
+
+			# Profit, 1600 (higher than 1400 of pm_aeroplane_production alone, 
+			# lower than 1800 of pm_aeroplane_production and pm_tank_production combined)	
+			level_scaled = {
+				# employment
+				# Adjusted, increased, to take into account that pm_tank_production isn't included.
+				building_employment_laborers_add = 750
+				# Halved from 1500 to 750
+				building_employment_machinists_add = 1000
+				# Halved from 2000 to 1000
+				building_employment_engineers_add = 750
+				# Halved from 1500 to 750
+			}
+		}
+	}
+
+# Liquor Destilery
+	# Temporary image until a better one is created.
+	pm_distillery_base = {
+		texture = "gfx/interface/icons/production_method_icons/distillery_pot_stills.dds"
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_grain_add = 12
+				# Halved from 25 to 12
+				building_input_sugar_add = 7
+				# Halved from 15 to 7
+
+				# output goods
+				building_output_liquor_add = 23
+				# Halved from 45 to 23
+			}
+
+			# Profit, 400 (lower than 550 for pm_bakery)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 2250
+				# Halved from 4500 to 2250
+			}
+		}
+	}		
+
+	# Temporary image until a better one is created.
+	pm_distillery_medium = {
+		texture = "gfx/interface/icons/production_method_icons/distillery_pot_stills_plus.dds"
+		
+		unlocking_technologies = {
+			distillation
+		}				
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_grain_add = 17
+				# Halved from 35 to 17
+				building_input_sugar_add = 10
+				# Halved from 20 to 10
+	
+				# output goods
+				building_output_liquor_add = 33
+				# Halved from 65 to 33
+			}
+
+			# Profit, 650 (lower than 700 for pm_sweeteners)
+			level_scaled = {
+				building_employment_laborers_add = 2000
+				# Halved from 4000 to 2000
+				building_employment_machinists_add = 250
+				# Halved from 500 to 250
+			}
+		}
+	}
+
+	# Temporary image until a better one is created.
+	pm_distillery_high = {
+		texture = "gfx/interface/icons/production_method_icons/distillery_patent_stills.dds"
+		
+		unlocking_technologies = {
+			baking_powder
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_grain_add = 35
+				# Halved from 70 to 35
+				building_input_sugar_add = 20
+				# Halved from 40 to 20
+
+				# output goods
+				building_output_liquor_add = 60
+				# Halved from 120 to 60
+			}
+
+			# Profit, 1000 (lower than 1100 for pm_baking_powder)
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 1750
+				# Halved from 3500 to 1750
+				building_employment_machinists_add = 375
+				# Halved from 750 to 375
+				building_employment_engineers_add = 125
+				# Halved from 250 to 125
+			}
+		}
+	}
+
+	pm_pot_stills_distillery = {
+		texture = "gfx/interface/icons/production_method_icons/pot_stills.dds"
+
+		unlocking_technologies = {
+			distillation				
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_sugar_add = 5
+				# Halved from 10 to 5
+				
+				# output goods
+				building_output_liquor_add = 8
+				# Halved from 15 to 8
+			}
+
+			# Profit, 150 (same as 150 for pm_pot_stills)
+			level_scaled = {
+				# employment
+				building_employment_shopkeepers_add = 100
+				building_employment_machinists_add = 125
+				# Halved from 250 to 125
+			}
+		}
+	}
+
+	pm_patent_stills_distillery = {
+		texture = "gfx/interface/icons/production_method_icons/patent_stills.dds"
+
+		unlocking_technologies = {
+			fractional_distillation
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_sugar_add = -3
+				# Halved from 5 to 3
+				building_input_grain_add = -5
+				# Halved from 10 to 5
+				building_input_glass_add = 10
+				# Halved from 20 to 10
+				
+				# output goods
+				building_output_liquor_add = 18
+				# Halved from 35 to 18
+			}
+
+			# Profit, 600 (lower than 650 for pm_patent_stills)
+			level_scaled = {
+				# employment
+				building_employment_shopkeepers_add = 200
+				building_employment_machinists_add = 250
+				# Halved from 500 to 250
+				building_employment_engineers_add = 200
+			}
+		}
+	}
+
+	# Image ought to be re-colored / changed.	
+	# Unchanged from 'pm_automated_bakery'
+	pm_manual_distillery = {
+		texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
+	}
+
+	# Unchanged from 'pm_automated_bakery'
+	# Temporary image until a better one is created.
+	pm_automated_distillery = {
+		texture = "gfx/interface/icons/production_method_icons/automated_distillery.dds"
+		
+		unlocking_technologies = {
+			dough_rollers
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_tools_add = 5
+				# Halved from 10 to 5
+			}
+
+			level_scaled = {
+				# profit = -400 (break-even when annual laborer wage > 8.32)
+				building_employment_laborers_add = -1250
+				# Halved from 2500 to 1250
+			}
+		}
+	}	
+
+# Steamer Shipyard
+	# Primary process
+	# Same as base ('pm_metal_shipbuilding')
+	pm_metal_steamer_shipbuilding = {
+		texture = "gfx/interface/icons/production_method_icons/reinforced_steam_ships.dds"
+		
+		pollution_generation = 5
+		# Halfed pollution from 10 to 5
+		
+		unlocking_technologies = {
+			ironclad_tech
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_steel_add = 15
+				# Halved from 30 to 15
+				building_input_coal_add = 5
+				# Halved from 10 to 5
+				building_input_engines_add = 5
+				# Halved from 10 to 5
+				
+				# output goods
+				building_output_steamers_add = 30
+				# Halved from 60 to 30
+			}
+
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 1000
+				# Halved from 2000 to 1000
+				building_employment_machinists_add = 750
+				# Halved from 1500 to 750
+				building_employment_engineers_add = 500
+				# Halved from 1000 to 500
+			}
+		}
+	}
+
+	# Same as base ('pm_arc_welding_shipbuilding')
+	pm_arc_welding_steamer_shipbuilding = {
+		texture = "gfx/interface/icons/production_method_icons/arc_welded_steam_ships.dds"
+		
+		pollution_generation = 10
+		# Halfed pollution from 20 to 10
+		
+		unlocking_technologies = {
+			arc_welding
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# input goods
+				building_input_steel_add = 15
+				# Halved from 30 to 15
+				building_input_electricity_add = 15
+				# Halved from 30 to 15
+				building_input_engines_add = 5
+				# Halved from 10 to 5
+				
+				# output goods
+				building_output_steamers_add = 40
+				# Halved from 80 to 40
+			}
+
+			level_scaled = {
+				# employment
+				building_employment_laborers_add = 500
+				# Halved from 1000 to 500
+				building_employment_machinists_add = 1000
+				# Halved from 2000 to 1000
+				building_employment_engineers_add = 750
+				# Halved from 1500 to 750
+			}
+		}
+	}
+
+	# Secondary process
+	# Same as base ('pm_no_military_shipbuilding')
+	# Temporary image until a better one is created.
+	pm_no_military_steamer_shipbuilding = {
+		texture = "gfx/interface/icons/production_method_icons/no_military_steam_shipbuilding.dds"
+	}
+
+	# Same as base ('pm_military_shipbuilding_steam')
+	pm_military_shipbuilding_steamer_normal = {
+		texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_steam.dds"
+		
+		unlocking_production_methods = {
+			pm_metal_steamer_shipbuilding
+			pm_arc_welding_steamer_shipbuilding
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# output goods
+				building_output_steamers_add = -10
+				# Halved from 20 to 10
+				building_output_ironclads_add = 10
+				# Halved from 20 to 10
+			}
+		}
+	}
+
+	# Same as base ('pm_military_shipbuilding_steam_2')
+	pm_military_shipbuilding_steamer_high = {
+		texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_steam_2.dds"
+		
+		unlocking_production_methods = {
+			pm_metal_steamer_shipbuilding
+			pm_arc_welding_steamer_shipbuilding
+		}
+		
+		building_modifiers = {
+			workforce_scaled = {
+				# output goods
+				building_output_steamers_add = -13
+				# Halved from 25 to 13
+				building_output_ironclads_add = 13
+				# Halved from 25 to 13
+			}
+		}
+	}	
+
+# Winery
+	# Turn Fruit into Wine.
+

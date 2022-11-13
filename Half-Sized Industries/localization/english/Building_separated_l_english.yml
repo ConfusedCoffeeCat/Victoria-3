@@ -1,0 +1,285 @@
+﻿l_english:
+
+# Fourth file.
+
+# Future plans? Potentially to be added in the future:
+  # Flavor text for certain materials / production methods etc.
+  # Such as, what is 'Rayon', add in text under the lens when you hover over the material/method etc.
+
+
+# Explosive Plants - Renamed 'Explosives Factory'
+ # Processes
+  # Primary process
+  pm_explosives_base:0 "Explosives"
+  pm_explosives_improved:0 "Improved Explosives"
+
+  # Secondary process
+  pm_explosives_leblanc_process:0 "Leblanc Process"
+  pm_explosives_ammonia_soda_process:0 "Ammonia-soda Process"
+  pm_explosives_vacuum_evaporation:0 "Vacuum Evaporation"
+  pm_explosives_brine_electrolysis:0 "Brine Electrolysis"
+
+ # Building Info
+  building_explosives_plants:0 "Explosives Factory"
+  building_explosives_plants_lens_option:0 "Expand $building_explosives_plants$"
+  pmg_explosives_production:0 "Method"
+  pmg_explosives_building_explosives_plants:0 "Process"
+  pmg_ownership_capital_building_explosives_plants:1 "$pmg_ownership$"
+
+# Luxury Clothing Plants
+ # Processes
+  # Primary process
+  pm_luxury_handsewn_clothes:0 "Handsewn Clothes"
+  pm_luxury_dye_workshops:0 "Dye Workshops"
+  pm_luxury_sewing_machines:0 "Sewing Machines"
+  pm_luxury_electric_sewing_machines:0 "Electric Sewing Machines"
+
+  # Secondary process
+  pm_craftsman_real_luxury_sewing:0 "Luxury Sewing" 
+  pm_luxury_craftsman_sewing:0 "Craftsman Sewing"
+  pm_luxury_elastics:0 "Elastics"
+	pm_traditional_looms_luxury_textile_mills:0 "Traditional Looms"
+	pm_mechanized_looms_luxury_textile_mills:0 "Mechanized Looms"
+	pm_automatic_power_looms_luxury_textile_mills:0 "Automatic Power Looms"
+
+ # Building Info
+  building_luxury_textile_mills:0 "Luxury Textile Mills"
+  building_luxury_textile_mills_lens_option:0 "Expand $building_luxury_textile_mills$"
+  pmg_base_building_luxury_textile_mills:1 "Base"
+  pmg_building_real_luxury_textile_mills:0 "Options"
+  pmg_automation_building_luxury_textile_mills:0 "Automation"
+	pmg_ownership_capital_building_luxury_textile_mills:1 "$pmg_ownership$"
+
+# Luxury Furniture Plants
+ # Processed Furniture"
+  # Primary process
+  pm_luxury_handcrafted_furniture:0 "Handcrafted Furniture"
+  pm_luxury_lathe:0 "Lathes"
+  pm_luxury_precision_tools:0 "Precision Tools"
+  pm_luxury_mechanized_workshops:0 "Mechanized Workshops"
+
+  # Secondary process
+  pm_luxury_furniture:0 "Luxury Furniture Production"
+  pm_real_luxury_furniture:0 "Luxury Furniture Production"
+	pm_watertube_boiler_building_luxury_furniture_manufacturies:0 "Water-tube Boiler"
+	pm_rotary_valve_engine_building_luxury_furniture_manufacturies:0 "Rotary Valve Engine"
+	pm_assembly_lines_building_luxury_furniture_manufacturies:0 "Assembly Lines"
+
+ # Building Info
+  building_luxury_furniture_manufacturies:0 "Luxury Furniture Manufacturies"
+  building_luxury_furniture_manufacturies_lens_option:0 "Expand $building_luxury_furniture_manufacturies$"
+  pmg_base_building_luxury_furniture_manufacturies:1 "Base"
+  pmg_building_real_luxury_furniture_manufacturies:0 "Options"
+	pmg_automation_building_luxury_furniture_manufacturies:0 "Automation"
+	pmg_ownership_capital_building_luxury_furniture_manufacturies:1 "$pmg_ownership$"
+
+# Porcelain Factory
+ # Processes  
+  # Primary process
+  pm_porcelain_base:0 "Base Porcelain"
+  pm_porcelain_middle:0 "Lead-based Porcelain"
+  pm_porcelain_highend:0 "Oil-based Porcelain"
+
+  # Secondary process
+  pm_real_ceramics:0 "Ceramics"
+  pm_real_bone_china:0 "Bone China"
+  pm_manual_porcelain_production:0 "Manual Porcelain Production"
+  pm_automated_porcelain_production:0 "Automated Porcelain Production"
+
+ # Building Info
+  building_porcelain_factory:0 "Porcelain Factory"
+  building_porcelain_factory_lens_option:0 "Expand $building_porcelain_factory$"
+  pmg_luxury_building_glassworks:0 "Luxury Production"
+  pmg_automation_porcelain:0 "Automation"
+	pmg_ownership_capital_porcelain_factory:1 "$pmg_ownership$"
+  pmg_base_building_porcelain:1 "Base"
+  pmg_luxury_building_porcelain:1 "Option"
+
+# Automobile Industry
+ # Processes
+  # Primary process
+  pm_steam_engines_automobile:0 "Steam Engines"
+  pm_electric_engines_automobile:0 "Electric Engines"
+  pm_diesel_engines_automobile:0 "Diesel Engines"
+
+  # Secondary process
+	pm_only_automobile_production:0 "Automobile Production"
+	pm_watertube_boiler_building_automobile_industry:0 "Water-tube Boiler"
+	pm_rotary_valve_engine_building_automobile_industry:0 "Rotary Valve Engine"
+	pm_assembly_lines_building_automobile_industry:0 "Assembly Lines"
+
+ # Building Info
+  building_automobile_industry:0 "Automobile Industries"
+  building_automobile_industry_lens_option:0 "Expand $building_automobile_industry$"
+  pmg_only_automobile_production:0 "Automobiles"
+  pmg_building_automobile_industry_engines:0 "Engines"
+	pmg_automation_building_automobile_industry:0 "Automation"
+	pmg_ownership_capital_building_automobile_industry:1 "$pmg_ownership$"
+
+# Artillery Foundry
+ # Processes
+  # Primary process
+	pm_artillery_base:0 "Artillery Base"
+	pm_artillery_medium:0 "Artillery Medium"
+	pm_artillery_high:0 "Artillery High"
+  # Should be renamed
+
+  # Secondary process
+	pm_artillery_cannons:0 "Cannons"
+	pm_artillery_smoothbores:0 "Smoothbores"
+	pm_artillery_breech_loaders:0 "Breech Loaders"
+
+ # Building Info
+  building_artillery_foundry:0 "Artillery Foundry"
+  building_artillery_foundry_lens_option:0 "Expand $building_artillery_foundry$"
+	pmg_artillery_manufacturing:0 "Base"
+	pmg_artillery_foundries:0 "Type"
+  pmg_ownership_capital_building_artillery_foundry:1 "$pmg_ownership$"
+
+# Rayon Plants - Synthetic silk production
+ # Processes
+  # Primary process
+    pm_rayon_base_production:0 "Rayon"
+		
+  # Secondary process
+  #  pm_rayon_secondary
+
+ # Building Info
+    building_rayon_plants:0 "Rayon Plants"
+    building_rayon_plants_lens_option:0 "Expand $building_rayon_plants$"
+    # pmg_synthetic_silk_rayon
+	  pmg_synthetic_base_rayon:0 "Synthetic Silk"
+    pmg_ownership_capital_building_rayon_plants:1 "$pmg_ownership$"
+
+# Radio industry
+ # Processes
+  # Primary process
+		pm_real_radios:0 "Radio Production"
+
+  # Secondary process
+
+ # Building Info
+  building_radio_industry:0 "Radio Industries"
+  building_radio_industry_lens_option:0 "Expand $building_radio_industry$"
+  pmg_real_radios_category:0 "Radios"
+  pmg_ownership_capital_building_radio_industry:1 "$pmg_ownership$"
+
+# Tank Industry
+ # Processes
+  # Primary process
+    pm_real_tank_production:0 "Tank Production"
+  # Secondary process
+
+ # Building Info
+  building_tank_industry:0 "Tank Industries"
+  building_tank_industry_lens_option:0 "Expand $building_tank_industry$"
+  pmg_real_tanks:0 "Tanks"
+  pmg_ownership_capital_building_tank_industry:1 "$pmg_ownership$"
+
+# Liquor Distillery
+ # Processes
+  # Primary process
+    pm_distillery_base:0 "Distillery base"
+		pm_distillery_medium:0 "Distillery medium"
+		pm_distillery_high:0 "Distillery high"
+  # Secondary process
+		pm_pot_stills_distillery:0 "Pot Stills"
+		pm_patent_stills_distillery:0 "Patent Stills"
+    pm_automated_distillery:0 "Automated Distillation"
+    pm_manual_distillery:0 "Manual Distillation"
+    # pm_ingredient_sugar_grain
+    # pm_ingredient_sugar_high
+    # pm_ingredient_grain_high
+
+ # Building Info
+  building_liquor_distillery:0 "Liquor Distillery"
+  building_liquor_distillery_lens_option:0 "Expand $building_liquor_distillery$"
+  pmg_base_liquor_distillery:0 "Base"
+  pmg_real_distillery:0 "Process"
+  #pmg_ingredient_distillery
+  pmg_automation_building_liquor_distillery:0 "Automation"
+
+# Steamer Shipyard
+ # Processes
+  # Primary process
+    pm_metal_steamer_shipbuilding:0 "Steamships"
+		pm_arc_welding_steamer_shipbuilding:0 "Arc-Welded Steamships"
+
+  # Secondary process
+	  pm_no_military_steamer_shipbuilding:0 "Civilian Shipbuilding"
+		pm_military_shipbuilding_steamer_normal:0 "Military Shipbuilding"
+		pm_military_shipbuilding_steamer_high:0 "Extensive Military Shipbuilding"
+
+ # Building Info
+  building_steamer_shipyards:0 "Steamer Shipyards"
+  building_steamer_shipyards_lens_option:0 "Expand $building_steamer_shipyards$"
+  pmg_base_building_steamer_shipyards:1 "Base"
+  pmg_steamer_military_base:1 "Option"
+  pmg_ownership_capital_building_steamer_shipyards:1 "$pmg_ownership$"
+
+
+
+
+
+# Sawmill
+ # Processes
+  # Primary process
+  # Secondary process
+
+  pm_real_hardwood:0 "Hardwood Production"
+  pm_real_saw_mills:0 "Saw Mills"
+  pm_real_electric_saw_mills:0 "Electric Saw Mills"
+
+ # Building Info
+  building_sawmill:0 "Sawmill"
+  building_sawmill_lens_option:0 "Expand $building_sawmill$"
+  pmg_real_hardwood:0 "Hardwood Production"
+  pmg_sawmill_equipment:0 "Special Equipment"
+  pmg_base_building_sawmill:1 "$pm_base$"
+
+
+
+
+# Winery
+# Turn Fruit into Wine.
+
+ # Processes
+  # Primary process
+  # Secondary process
+ # Building Info
+
+
+
+
+# Resources split from farms
+
+
+# Potato Farm
+ # Processes
+ # Building Info
+
+# Apple Orchard
+ # Processes
+ # Building Info
+
+# Vineyard
+ # Processes
+ # Building Info
+
+# Citrus Orchard
+ # Processes
+ # Building Info
+
+# Fig Orchard
+ # Processes
+ # Building Info
+
+# Hardwood Camp
+ # Processes
+ # Building Info
+
+
+
+# Created modifiers
+  modifier_building_input_furniture_add:0 "@furniture! Furniture input per level"
+  modifier_building_input_furniture_add_desc:0 "The amount of @furniture! Furniture consumed by buildings"

@@ -1,0 +1,89 @@
+Documentation:
+
+Created new building values in common\script_values.
+
+Created new values in building_groups. Minor buff for light industries since they use 50 % of the previous infrastructure value (previous value = 2, new value = 1).
+Compared to heavy industries which uses 67 % (previous value = 3, new value = 2).
+Adjusted urbanization level to half the previous level.
+Doubles the value of 'levels_per_mesh' to account that there's now going to be twice as many industries required to have the same output.
+
+Halved input/output. Should be followed by a comment underneath the line regarding what has been adjusted.
+
+Halved employment. Should be followed by a comment underneath the line regarding what has been adjusted.
+Halved polution.
+
+Went through \common\history\buildings and added secondary goods factories and doubled/adjusted  factory sizes where applicable.
+
+
+
+
+
+Double buildings:
+building_tooling_workshops
+building_paper_mills
+building_synthetics_plants
+building_steel_mills 
+building_motor_industry 
+building_shipyards 
+building_war_machine_industry 
+building_electrics_industry 
+building_munition_plants 
+
+Add buildings on a ratio 1.5 to 0.5 for base goods vs. luxury goods.
+Where the base goods is rounded up and the secondary goods is roudned down.
+Example:
+Value	Base	Luxury		Sum	
+1		1			1 		2		(exception to the rule. Tend to go 1:1, instead of 2:0)
+2		3			1		4
+3		5			1		6
+4		6			2		8
+5		8			2		10
+6		9			3		12
+
+
+Search through the buildings to see which processes they have active, if it's a process for a luxury process, then it gets the associated buildings.
+building_food_industry 
+building_liquor_distillery
+
+building_textile_mills 
+building_luxury_textile_mills
+
+building_furniture_manufacturies
+building_luxury_furniture_manufacturies
+
+building_glassworks
+building_porcelain_factory
+
+building_arms_industry 
+building_artillery_foundry
+
+building_chemical_plants
+building_explosives_plants
+
+Industry Type						Number (of instances)
+building_textile_mills 				164
+building_furniture_manufacturies	94
+building_glassworks					94
+building_arms_industry 				64
+building_shipyards 					62
+building_food_industry 				54
+building_tooling_workshops			44
+building_paper_mills 				40
+building_chemical_plants			5
+building_steel_mills 				5
+building_munition_plants 			4
+building_motor_industry 			1
+building_synthetics_plants			0
+building_war_machine_industry 		0
+building_electrics_industry 		0
+
+Number of separate instances of each building type (i.e. not including levels).
+First go through any instances that doesn't require new specialty resource buildings. Double them straight up.
+
+Questions
+What impact does it have on the trade?
+
+Editing \common\journal_entries to account for entries that otherwise won't work due to production methods having been removed.
+Changes journal_entries to instead work with the new buildings / methods.
+
+Events.

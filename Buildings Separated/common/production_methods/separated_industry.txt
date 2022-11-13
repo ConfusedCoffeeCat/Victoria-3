@@ -592,9 +592,9 @@
 	}
 	
 # Porcelain Factory
-	# Image ought to be changed
+	# Temporary image until a better one is created.
 	pm_porcelain_base = {
-		texture = "gfx/interface/icons/production_method_icons/forest_glass.dds"
+		texture = "gfx/interface/icons/production_method_icons/porcelain_base.dds"
 		
 		building_modifiers = {
 			workforce_scaled = {
@@ -614,9 +614,9 @@
 		}
 	}		
 
-	# Image ought to be changed
+	# Temporary image until a better one is created.
 	pm_porcelain_middle = {
-		texture = "gfx/interface/icons/production_method_icons/leaded_glass.dds"
+		texture = "gfx/interface/icons/production_method_icons/porcelain_medium.dds"
 		pollution_generation = 5
 		
 		unlocking_technologies = { 
@@ -645,9 +645,9 @@
 
 	# No equivalent of pm_crystal_glass
 
-	# Image ought to be changed
+	# Temporary image until a better one is created.
 	pm_porcelain_highend = {
-		texture = "gfx/interface/icons/production_method_icons/houseware_plastics.dds"
+		texture = "gfx/interface/icons/production_method_icons/porcelain_plus.dds"
 		pollution_generation = 15
 		
 		unlocking_technologies = {
@@ -675,8 +675,9 @@
 		}
 	}
 
+	# Flipped image for consistency in which direction things point.
 	pm_real_ceramics = {
-		texture = "gfx/interface/icons/production_method_icons/ceramics.dds"
+		texture = "gfx/interface/icons/production_method_icons/ceramics_flipped.dds"
 		
 		building_modifiers = {
 			workforce_scaled = {
@@ -718,14 +719,14 @@
 		}														
 	}
 
-	# Image ought to be changed
+	# Image changed to one for 'no_automation'
 	pm_manual_porcelain_production = {
-		texture = "gfx/interface/icons/production_method_icons/glassworks_handicraft.dds"
+		texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
 	}
 
-	# Image ought to be changed
+	# Temporary image until a better one is created.
 	pm_automated_porcelain_production = {
-		texture = "gfx/interface/icons/production_method_icons/automated_bottle_blowers.dds"
+		texture = "gfx/interface/icons/production_method_icons/automated_porcelain.dds"
 		pollution_generation = 5
 		
 		unlocking_technologies = {
@@ -941,9 +942,9 @@
 # Artillery Foundry
 	#pm_muskets
 	# Based on cannons input (iron)
-	# Image ought to be changed
+	# Temporary image until a better one is created.
 	pm_artillery_base = {
-		texture = "gfx/interface/icons/production_method_icons/muskets.dds"
+		texture = "gfx/interface/icons/production_method_icons/base_artillery.dds"
 		
 		building_modifiers = {
 			workforce_scaled = {
@@ -966,9 +967,9 @@
 
 	#pm_repeaters
 	# based on smoothbores input (steel instead of iron)
-	# Image ought to be changed
+	# Temporary image until a better one is created.
 	pm_artillery_medium = {
-		texture = "gfx/interface/icons/production_method_icons/repeaters.dds"
+		texture = "gfx/interface/icons/production_method_icons/medium_artillery.dds"
 		
 		unlocking_technologies = {
 			repeaters
@@ -996,9 +997,9 @@
 	}
 
 	#pm_bolt_action_rifles
-	# Image ought to be changed
+	# Temporary image until a better one is created.
 	pm_artillery_high = {
-		texture = "gfx/interface/icons/production_method_icons/bolt_action_rifles.dds"
+		texture = "gfx/interface/icons/production_method_icons/high_artillery.dds"
 		
 		unlocking_technologies = {
 			bolt_action_rifles
@@ -1076,8 +1077,9 @@
 		}
 	}
 
+	# Added plus to original image used since it was weird to have the lowest and highest production level to use the same image.
 	pm_artillery_breech_loaders = {
-		texture = "gfx/interface/icons/production_method_icons/artillery_production.dds"
+		texture = "gfx/interface/icons/production_method_icons/artillery_production_plus.dds"
 		
 		unlocking_technologies = {
 			breech_loading_artillery
@@ -1103,9 +1105,9 @@
 	}
 
 # Rayon Plants - Synthetic silk production
-	# Image ought to be re-colored / changed.
+	# Temporary image until a better one is created.
 	pm_rayon_base_production = {
-		texture = "gfx/interface/icons/production_method_icons/rayon.dds"
+		texture = "gfx/interface/icons/production_method_icons/rayon_recolored.dds"
 		
 		pollution_generation = 5
 
@@ -1131,9 +1133,9 @@
 	}
 
 	# Radio industry
-	# Image ought to be re-colored / changed.
+	# Temporary image until a better one is created.
 	pm_real_radios = {
-		texture = "gfx/interface/icons/production_method_icons/radios.dds"
+		texture = "gfx/interface/icons/production_method_icons/radios_recolored.dds"
 		
 		building_modifiers = {
 			workforce_scaled = {
@@ -1162,9 +1164,9 @@
 
 # Tank Industry
 	# Easy enough to add in a more advanced tank version later on.
-	# Image ought to be re-colored / changed.
+	# Temporary image until a better one is created.
 	pm_real_tank_production = {
-		texture = "gfx/interface/icons/production_method_icons/tanks.dds"
+		texture = "gfx/interface/icons/production_method_icons/tanks_recolored.dds"
 
 		building_modifiers = {
 			workforce_scaled = {
@@ -1190,9 +1192,9 @@
 	}
 
 # Liquor Destilery
-	# Image ought to be changed.
+	# Temporary image until a better one is created.
 	pm_distillery_base = {
-		texture = "gfx/interface/icons/production_method_icons/bakeries.dds"
+		texture = "gfx/interface/icons/production_method_icons/distillery_pot_stills.dds"
 		
 		building_modifiers = {
 			workforce_scaled = {
@@ -1212,9 +1214,9 @@
 		}
 	}		
 
-	# Image ought to be changed.
+	# Temporary image until a better one is created.
 	pm_distillery_medium = {
-		texture = "gfx/interface/icons/production_method_icons/sweeteners.dds"
+		texture = "gfx/interface/icons/production_method_icons/distillery_pot_stills_plus.dds"
 		
 		unlocking_technologies = {
 			distillation
@@ -1238,9 +1240,9 @@
 		}
 	}
 
-	# Image ought to be changed.
+	# Temporary image until a better one is created.
 	pm_distillery_high = {
-		texture = "gfx/interface/icons/production_method_icons/baking_powder.dds"
+		texture = "gfx/interface/icons/production_method_icons/distillery_patent_stills.dds"
 		
 		unlocking_technologies = {
 			baking_powder
@@ -1325,10 +1327,10 @@
 		texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
 	}
 
-	# Image ought to be re-colored / changed.
 	# Unchanged from 'pm_automated_bakery'
+	# Temporary image until a better one is created.
 	pm_automated_distillery = {
-		texture = "gfx/interface/icons/production_method_icons/automated_bakery.dds"
+		texture = "gfx/interface/icons/production_method_icons/automated_distillery.dds"
 		
 		unlocking_technologies = {
 			dough_rollers
@@ -1411,8 +1413,9 @@
 
 	# Secondary process
 	# Same as base ('pm_no_military_shipbuilding')
+	# Temporary image until a better one is created.
 	pm_no_military_steamer_shipbuilding = {
-		texture = "gfx/interface/icons/production_method_icons/no_military_shipbuilding.dds"
+		texture = "gfx/interface/icons/production_method_icons/no_military_steam_shipbuilding.dds"
 	}
 
 	# Same as base ('pm_military_shipbuilding_steam')

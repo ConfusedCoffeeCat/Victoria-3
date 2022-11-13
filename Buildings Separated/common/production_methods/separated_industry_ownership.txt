@@ -7,7 +7,7 @@
 # None of the specifics for ownership has been changed thus far.
 
 # Explosives Plant
-	pm_publicly_traded_building_chemical_plants = {
+	pm_publicly_traded_building_explosives_plants = {
 		texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
 		unlocking_production_methods = {
