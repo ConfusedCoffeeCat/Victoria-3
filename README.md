@@ -5,29 +5,27 @@ None of the mods are necessarily balanced.
 Suggestions on balancing is appreciated. 
 
 # Buildings separated
-Future planned updates:
 
-Fix images/icons for existing functions in the game (such as liquor factory having bakery icons) 
+Creates industries that exclusively produce secondary goods (luxury goods) to allow for easier managing of industries through the buildings side-bar.
 
-Fix images/icons that have the 'wrong' color compared to what is the norm in the game (silk/rayon in rayon plant being purple, instead of beige).
 
 # Original industries separated
 
-Original factories only produce one goods (Secondary goods and production chains removed), overwrites default industries. Shipyard excluded. Has to be used together with 'Buildings separated'.
+Original factories now only produce one goods (Secondary goods and production chains removed), overwrites default industries. Shipyard excluded. Has to be used together with 'Buildings separated'.
 
-Potentially game breaking (although in my limited tests thus far the AI does build the original and the new industries), has to be evaluated (AI behavior and other files might need to be changed).
+Potentially game breaking (although in limited tests, thus far the AI builds the originals and the new industries), has to be evaluated (AI behavior and other files might need to be changed).
 
-# Half-sized industries (in process)
+# Half-sized industries
 
 Combines the two mods above, but the industries are halved in sized, doubled in numbers.
 
-Industries would have half infrastructure cost, input and output, employment and construction cost etc. 
+Industries now have half infrastructure cost, input and output, employment and construction cost etc. 
 
 Evaluate if the AI performs better with smaller buildings when their decision making has smaller consequences for each decision. Faster feedback for each building.
 
-Currently the industries will benefit more from throughput due to them being double the size (might consider adjusting throughput to take into account for higher levels of industries).
+Currently industries benefits more from throughput due to them being twice the level for the same output and cost (might consider adjusting throughput to take into account for higher levels of industries).
 
-(Not going to change resource buildings since that would also have to change the max size of all the regions on the map, it would have to be adjusted at the same time as a big resource overhaul mod).
+(Not going to change resource buildings since that would also require changing the size of all the regions on the map, it would have to be adjusted at the same time as a big resource overhaul mod).
 
 # Potential future projects.
 
