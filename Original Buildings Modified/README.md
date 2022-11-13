@@ -1,5 +1,5 @@
 # Original buildings modified
-Removes secondary output from industries. Has to be used together with 'Buildings Separated' to work. Overwrites default industries. 
+Removes secondary output from industries. Has to be used together with 'Buildings Separated' to work. Overwrites default industries.
 
 Food industry no longer produces Liquor.
 
@@ -23,9 +23,11 @@ War machine industry no longer produces Tanks.
 
 Shipyard - Unchanged.
 
-## Potential future updates:
+## Notes and Potential future updates:
 
 Adjust trade-routes that are now contain zero-goods, alternatively add/adjust buildings that produce the removed goods in associated provinces from where they were removed. (Fixed in Half-Sized Industries. Might do the same here, i.e. edit starting buildings /common/history/buildings/ )
+
+Adjusts a few events (and similar) that are affected by the removal of secondary goods.
 
 Look at the ai programming in \common\ai_strategies regarding buildings and logic regarding buildings. Is outright removing the secondary goods from buildings an issue?
 
