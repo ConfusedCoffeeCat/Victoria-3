@@ -61,21 +61,21 @@ building_chemical_plants
 building_explosives_plants
 
 Industry Type						Number (of instances)
-building_textile_mills 				164
+building_textile_mills 			    	164
 building_furniture_manufacturies	94
-building_glassworks					94
-building_arms_industry 				64
-building_shipyards 					62
-building_food_industry 				54
-building_tooling_workshops			44
-building_paper_mills 				40
-building_chemical_plants			5
-building_steel_mills 				5
-building_munition_plants 			4
-building_motor_industry 			1
-building_synthetics_plants			0
+building_glassworks			      		94
+building_arms_industry 		    		64
+building_shipyards 				      	62
+building_food_industry 		    		54
+building_tooling_workshops		  	44
+building_paper_mills 	      			40
+building_chemical_plants	    		5
+building_steel_mills 		      		5
+building_munition_plants     			4
+building_motor_industry 	    		1
+building_synthetics_plants	  		0
 building_war_machine_industry 		0
-building_electrics_industry 		0
+building_electrics_industry 	  	0
 
 Number of separate instances of each building type (i.e. not including levels).
 First go through any instances that doesn't require new specialty resource buildings. Double them straight up.
