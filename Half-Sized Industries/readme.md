@@ -37,3 +37,4 @@ Currently industries benefits more from throughput due to them being twice the l
 
 (Not going to change resource buildings since that would also require changing the size of all the regions on the map, it would have to be adjusted at the same time as a big resource overhaul mod).
 
+Adjust starting trade-routes to account for their current capacity (25 trade-routes at start of the game).
