@@ -29,6 +29,11 @@ The new Tank Industry produces Tanks, and the War machine industry no longer pro
 
 The new Steamer Shipyard produces Steamers and Ironclads, but the shipyard remains unchanged.
 
-## Potential future updates:
+## Notes and Potential future updates:
+
+Evaluate if the AI performs better with smaller buildings when their decision making has smaller consequences for each decision. Faster feedback for each building.
 
 Currently industries benefits more from throughput due to them being twice the level for the same output and cost (might consider adjusting throughput to take into account for higher levels of industries).
+
+(Not going to change resource buildings since that would also require changing the size of all the regions on the map, it would have to be adjusted at the same time as a big resource overhaul mod).
+
