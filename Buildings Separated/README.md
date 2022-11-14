@@ -35,3 +35,5 @@ Would have to create a solution on how to add meshes without replacing default f
 Adjust input/output/employment for balancing purposes.
 
 Consider the number of processes in each building for balancing purposes. 
+
+Consideration for a military only shipyard (how well would it work with the AI?)
