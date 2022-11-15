@@ -4,21 +4,21 @@ Mods for Victoria 3
 None of the mods are necessarily balanced.
 Suggestions on balancing is appreciated. 
 
-# Buildings separated
+# Buildings Separated ('Base version')
 
-Creates industries that exclusively produce secondary goods (luxury goods) to allow for easier managing of industries through the buildings side-bar.
-
-
-# Original industries separated
-
-Original factories now only produce one goods (Secondary goods and production chains removed), overwrites default industries. Shipyard excluded. Has to be used together with 'Buildings separated'.
-
-Potentially game breaking (although in limited tests, thus far the AI builds the originals and the new industries), has to be evaluated (AI behavior and other files might need to be changed).
+ Creates industries that exclusively produce secondary goods (luxury goods) to allow for easier managing of industries through the buildings side-bar. Original industries unchanged in this version to allow for better compatibility with other mods. Intended to make managing industries easier for the player (the AI will still be able to build the new buildings, which could have unintended consequences.
 
 
-# Half-sized industries
+# Industries Revamped ('Full version')
 
-Combines the two mods above, but the industries are halved in sized, doubled in numbers.
+Industries produce one goods and removes secondary output from original industries. Creates industries that exclusively produce secondary goods and the original factories now only produce one goods (Secondary goods and production chains removed), overwrites default industries. Shipyard excluded.
+
+Potentially game breaking (although in limited tests, thus far the AI builds the originals and the new industries and performs as well as it does in vanilla). Future evaluation and balacing to be expected.
+
+
+# Half-sized Industries
+
+Same as the 'full version', but the industries are halved in sized, doubled in numbers.
 
 Industries now have half infrastructure cost, input and output, employment and construction cost etc. 
 
