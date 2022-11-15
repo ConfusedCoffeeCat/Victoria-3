@@ -1,5 +1,33 @@
-# Original buildings modified
-Removes secondary output from industries. Has to be used together with 'Buildings Separated' to work. Overwrites default industries.
+# Industries Revamped
+The 'full version', creates industries that exclusively produce secondary goods and removes secondary output from the original industries.
+
+Intended to allow for easier management of industries through the buildings side-bar as to avoid having to managing individual factories in an attempt to balance secondary goods.
+
+## New industries:
+
+Liquor distillery produces Liquor.
+
+Explosives Plant produces Explosives.
+
+Luxury Textile Mill produces Luxury Clothes.
+
+Luxury Furniture Manufacturies produces Luxury Furniture.
+
+Porcelain Factory produces Porcelain.
+
+Automobile Industry produces Automobiles.
+
+Artillery Foundry produces Artillery.
+
+Rayon Plants, Synthetic silk production, produces Silk.
+
+Radio industry produces Radios.
+
+Tank Industry produces Tanks.
+
+Steamer Shipyard produces Steamers and Ironclads.
+
+## Changes to existing industries:
 
 Food industry no longer produces Liquor.
 
@@ -31,4 +59,8 @@ Adjusts a few events (and similar) that are affected by the removal of secondary
 
 Look at the ai programming in \common\ai_strategies regarding buildings and logic regarding buildings. Is outright removing the secondary goods from buildings an issue?
 
+## Balancing:
+
 Consider adding back in a third process in some buildings where it was outright removed (for Original Buildings Modified), alternatively modifying the secondary goods in 'Buildings separated' to account for the current design. Might not be an issue.
+
+Make clothes and furniture factories produce more goods?

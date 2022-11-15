@@ -1,0 +1,361 @@
+﻿# MANUFACTURING INDUSTRIES - Production Methods Groups
+
+# The Ownership info (references in this file) is split into a separate file 'separated_ownership'
+# Second file
+# Equivalent game file '\game\common\production_methods_groups\01_industry.txt'
+
+# Production lines in new Industries
+
+# Explosives Plant
+	pmg_explosives_production = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+		production_methods = {
+			pm_explosives_base
+			pm_explosives_improved
+		}
+	}
+
+	pmg_explosives_building_explosives_plants = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+		production_methods = {
+			pm_explosives_leblanc_process
+			pm_explosives_ammonia_soda_process
+			pm_explosives_vacuum_evaporation
+			pm_explosives_brine_electrolysis
+		}
+	}
+
+	pmg_ownership_capital_building_explosives_plants = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+		production_methods = {
+			pm_privately_owned_industry
+			pm_publicly_traded_building_explosives_plants
+			pm_government_run_industry
+			pm_worker_cooperative_industry
+		}
+	}
+
+# Luxury Textile Mills
+	# Switch the order of the luxury production and base options?
+	pmg_base_building_luxury_textile_mills = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+		production_methods = {
+			pm_luxury_handsewn_clothes
+			pm_luxury_dye_workshops
+			pm_luxury_sewing_machines
+			pm_luxury_electric_sewing_machines
+		}
+	}
+
+	pmg_building_real_luxury_textile_mills = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+		production_methods = {
+			pm_craftsman_real_luxury_sewing
+			pm_luxury_elastics
+		}
+	}
+	
+	pmg_automation_building_luxury_textile_mills = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+		production_methods = {
+			pm_traditional_looms_luxury_textile_mills
+			pm_mechanized_looms_luxury_textile_mills
+			pm_automatic_power_looms_luxury_textile_mills
+		}
+	}
+
+	pmg_ownership_capital_building_luxury_textile_mills = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+		production_methods = {
+			pm_merchant_guilds_building_luxury_textile_mills
+			pm_privately_owned_building_luxury_textile_mills
+			pm_publicly_traded_building_luxury_textile_mills
+			pm_government_run_building_luxury_textile_mills
+			pm_worker_cooperative_building_luxury_textile_mills
+		}
+	}
+
+# Luxury Furniture Manufacturing
+	pmg_base_building_luxury_furniture_manufacturies = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+		production_methods = {
+			pm_luxury_handcrafted_furniture
+			pm_luxury_lathe
+			pm_luxury_mechanized_workshops
+		}
+	}
+
+	pmg_building_real_luxury_furniture_manufacturies = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+		production_methods = {
+			pm_real_luxury_furniture
+			pm_luxury_precision_tools
+		}
+	}
+
+	pmg_automation_building_luxury_furniture_manufacturies = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+		production_methods = {
+			pm_automation_disabled
+			pm_watertube_boiler_building_luxury_furniture_manufacturies
+			pm_rotary_valve_engine_building_luxury_furniture_manufacturies
+			pm_assembly_lines_building_luxury_furniture_manufacturies
+		}
+	}
+
+	pmg_ownership_capital_building_luxury_furniture_manufacturies = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+		production_methods = {
+			pm_merchant_guilds_building_luxury_furniture_manufacturies
+			pm_privately_owned_building_luxury_furniture_manufacturies
+			pm_publicly_traded_building_luxury_furniture_manufacturies
+			pm_government_run_building_luxury_furniture_manufacturies
+			pm_worker_cooperative_building_luxury_furniture_manufacturies
+		}
+	}
+
+# Porceline Factory
+	pmg_base_building_porcelain = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+		production_methods = {
+			pm_porcelain_base
+			pm_porcelain_middle
+			pm_porcelain_highend
+		}
+	}		
+			
+	pmg_luxury_building_porcelain = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+		production_methods = {
+			pm_real_ceramics
+			pm_real_bone_china
+		}
+	}		
+
+	pmg_automation_porcelain = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+		production_methods = {
+			pm_manual_porcelain_production
+			pm_automated_porcelain_production
+		}
+	}
+
+	pmg_ownership_capital_porcelain_factory = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+		production_methods = {
+			pm_merchant_guilds_building_porcelain_factory
+			pm_privately_owned_building_porcelain_factory
+			pm_publicly_traded_building_porcelain_factory
+			pm_government_run_building_porcelain_factory
+			pm_worker_cooperative_building_porcelain_factory
+		}
+	}
+
+# Automobile Industry
+	pmg_building_automobile_industry_engines = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+		production_methods = {
+			pm_steam_engines_automobile
+			pm_electric_engines_automobile
+			pm_diesel_engines_automobile
+		}
+	}
+
+	pmg_only_automobile_production = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+		production_methods = {
+			pm_only_automobile_production
+		}
+	}
+
+	pmg_automation_building_automobile_industry = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+		production_methods = {
+			pm_automation_disabled
+			pm_watertube_boiler_building_automobile_industry
+			pm_rotary_valve_engine_building_automobile_industry
+			pm_assembly_lines_building_automobile_industry
+		}
+	}
+
+	pmg_ownership_capital_building_automobile_industry = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+		production_methods = {
+			pm_privately_owned_industry
+			pm_publicly_traded_building_automobile_industries
+			pm_government_run_industry
+			pm_worker_cooperative_industry
+		}
+	}
+
+# Artillery Foundry
+	pmg_artillery_manufacturing = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+		ai_selection = most_productive
+
+		production_methods = {
+			pm_artillery_base
+			pm_artillery_medium
+			pm_artillery_high
+		}
+	}
+			
+	pmg_artillery_foundries = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+		ai_selection = most_productive
+
+		production_methods = {
+			pm_artillery_cannons
+			pm_artillery_smoothbores
+			pm_artillery_breech_loaders
+		}
+	}
+
+	pmg_ownership_capital_building_artillery_foundry = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+		production_methods = {
+			pm_merchant_guilds_building_artillery_foundry
+			pm_privately_owned_building_artillery_foundry
+			pm_publicly_traded_building_artillery_foundry
+			pm_government_run_building_artillery_foundry
+			pm_worker_cooperative_building_artillery_foundry
+		}
+	}
+
+# Rayon Plants - Synthetic silk production
+	pmg_synthetic_base_rayon = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+		production_methods = {
+			pm_rayon_base_production
+		}
+	}
+
+	pmg_ownership_capital_building_rayon_plants = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+		production_methods = {
+			pm_privately_owned_industry
+			pm_publicly_traded_building_rayon_plants
+			pm_government_run_industry
+			pm_worker_cooperative_industry
+		}
+	}
+	
+# Radio industry
+	pmg_real_radios_category = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+		production_methods = {
+			pm_real_radios
+		}
+	}
+	
+	pmg_ownership_capital_building_radio_industry = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+		production_methods = {
+			pm_privately_owned_industry
+			pm_publicly_traded_building_radio_industry
+			pm_government_run_industry
+			pm_worker_cooperative_industry
+		}
+	}
+
+# Tank Industry
+	# Easy enough to add in a more advanced tank version later on.
+	pmg_real_tanks = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+		production_methods = {
+			pm_real_tank_production
+		}
+	}
+	
+	pmg_ownership_capital_building_tank_industry = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+		production_methods = {
+			pm_privately_owned_industry
+			pm_publicly_traded_building_tank_industry
+			pm_government_run_industry
+			pm_worker_cooperative_industry
+		}
+	}
+
+# Liquor Destilery
+	pmg_base_liquor_distillery = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+		production_methods = {
+			pm_distillery_base
+			pm_distillery_medium
+			pm_distillery_high
+		}
+	}
+
+	# Input options, sugar or grain.
+	# pmg_ingredient_distillery = {
+	# 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	# 	production_methods = {
+	# 		pm_ingredient_sugar_grain
+	# 		pm_ingredient_sugar_high
+	# 		pm_ingredient_grain_high
+	# 	}
+	# }
+
+	pmg_real_distillery = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+		production_methods = {
+			pm_pot_stills_distillery
+			pm_patent_stills_distillery
+		}
+	}
+
+	pmg_automation_building_liquor_distillery = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+		production_methods = {
+			pm_manual_distillery
+			pm_automated_distillery
+		}
+	}
+
+	pmg_ownership_capital_building_liquor_distillery = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+		production_methods = {
+			pm_merchant_guilds_building_liquor_distillery
+			pm_privately_owned_building_liquor_distillery
+			pm_publicly_traded_building_liquor_distillery
+			pm_government_run_building_liquor_distillery
+			pm_worker_cooperative_building_liquor_distillery
+		}
+	}
+
+# Steamer Shipyard
+	pmg_base_building_steamer_shipyards = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+		ai_selection = most_productive
+
+		production_methods = {
+			pm_metal_steamer_shipbuilding
+			pm_arc_welding_steamer_shipbuilding
+		}
+	}
+
+	pmg_steamer_military_base = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+		ai_selection = most_productive
+
+		production_methods = {
+			pm_no_military_steamer_shipbuilding
+			pm_military_shipbuilding_steamer_normal
+			pm_military_shipbuilding_steamer_high
+		}
+	}
+	
+	pmg_ownership_capital_building_steamer_shipyards = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+		production_methods = {
+			pm_merchant_guilds_building_steamer_shipyards
+			pm_privately_owned_building_steamer_shipyards
+			pm_publicly_traded_building_steamer_shipyards
+			pm_government_run_building_steamer_shipyards
+			pm_worker_cooperative_building_steamer_shipyards
+		}
+	}
+
+# Winery
+	# Turn Fruit into Wine.

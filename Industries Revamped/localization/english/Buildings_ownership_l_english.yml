@@ -1,0 +1,69 @@
+﻿l_english:
+
+# Ownership info for all created buildings
+
+# Ownership
+ # pmg_ownership:0 "Ownership"
+ pmg_ownership_capital_building_liquor_distillery:1 "$pmg_ownership$"
+ pmg_ownership_capital_building_luxury_textile_mills:1 "$pmg_ownership$"
+ pmg_ownership_capital_building_luxury_furniture_manufacturies:1 "$pmg_ownership$"
+ pmg_ownership_capital_building_porcelain_factory:1 "$pmg_ownership$"
+ pmg_ownership_capital_building_explosives_plants:1 "$pmg_ownership$"
+ pmg_ownership_capital_building_rayon_plants:1 "$pmg_ownership$"
+ pmg_ownership_capital_building_automobile_industry:1 "$pmg_ownership$"
+ pmg_ownership_capital_building_steamer_shipyards:1 "$pmg_ownership$"
+ pmg_ownership_capital_building_tank_industry:1 "$pmg_ownership$"
+ pmg_ownership_capital_building_radio_industry:1 "$pmg_ownership$"
+ pmg_ownership_capital_building_artillery_foundry:1 "$pmg_ownership$"
+ 
+# Merchant Guilds
+ # pm_merchant_guilds:0 "Merchant Guilds"
+ pm_merchant_guilds_building_liquor_distillery:1 "$pm_merchant_guilds$"
+ pm_merchant_guilds_building_luxury_textile_mills:1 "$pm_merchant_guilds$"
+ pm_merchant_guilds_building_luxury_furniture_manufacturies:1 "$pm_merchant_guilds$"
+ pm_merchant_guilds_building_porcelain_factory:1 "$pm_merchant_guilds$"
+ pm_merchant_guilds_building_steamer_shipyards:1 "$pm_merchant_guilds$"
+ pm_merchant_guilds_building_artillery_foundry:1 "$pm_merchant_guilds$"
+
+# Privately Owned
+ # pm_privately_owned:0 "Privately Owned"
+ pm_privately_owned_building_liquor_distillery:1 "$pm_privately_owned$"
+ pm_privately_owned_building_luxury_textile_mills:1 "$pm_privately_owned$"
+ pm_privately_owned_building_luxury_furniture_manufacturies:1 "$pm_privately_owned$"
+ pm_privately_owned_building_porcelain_factory:1 "$pm_privately_owned$"
+ pm_privately_owned_building_steamer_shipyards:1 "$pm_privately_owned$"
+ pm_privately_owned_building_artillery_foundry:1 "$pm_privately_owned$"
+ 
+# Publicly Traded
+ # pm_publicly_traded:0 "Publicly Traded"
+ pm_publicly_traded_building_liquor_distillery:0 "$pm_publicly_traded$"
+ pm_publicly_traded_building_luxury_textile_mills:1 "$pm_publicly_traded$"
+ pm_publicly_traded_building_luxury_furniture_manufacturies:1 "$pm_publicly_traded$"
+ pm_publicly_traded_building_porcelain_factory:1 "$pm_publicly_traded$"
+ pm_publicly_traded_building_steamer_shipyards:1 "$pm_publicly_traded$"
+ pm_publicly_traded_building_artillery_foundry:1 "$pm_publicly_traded$"
+ pm_publicly_traded_building_automobile_industries:1 "$pm_publicly_traded$"
+ pm_publicly_traded_building_radio_industry:1 "$pm_publicly_traded$"
+ pm_publicly_traded_building_rayon_plants:1 "$pm_publicly_traded$"
+ pm_publicly_traded_building_tank_industry:1 "$pm_publicly_traded$"
+  pm_publicly_traded_building_explosives_plants:1 "$pm_publicly_traded$"
+
+# Government Run
+ # pm_government_run:0 "Government Run"
+ pm_government_run_building_liquor_distillery:1 "$pm_government_run$"
+ pm_government_run_building_luxury_textile_mills:1 "$pm_government_run$"
+ pm_government_run_building_luxury_furniture_manufacturies:1 "$pm_government_run$"
+ pm_government_run_building_porcelain_factory:1 "$pm_government_run$"
+ pm_government_run_building_steamer_shipyards:1 "$pm_government_run$"
+ pm_government_run_building_artillery_foundry:1 "$pm_government_run$" 
+
+# Worker Cooperative
+ # pm_worker_cooperative:0 "Worker Cooperative"
+ pm_worker_cooperative_building_liquor_distillery:1 "$pm_worker_cooperative$"
+ pm_worker_cooperative_building_luxury_textile_mills:1 "$pm_worker_cooperative$"
+ pm_worker_cooperative_building_luxury_furniture_manufacturies:1 "$pm_worker_cooperative$"
+ pm_worker_cooperative_building_porcelain_factory:1 "$pm_worker_cooperative$"
+ pm_worker_cooperative_building_steamer_shipyards:1 "$pm_worker_cooperative$"
+ pm_worker_cooperative_building_artillery_foundry:1 "$pm_worker_cooperative$"
+
+

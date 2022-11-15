@@ -3,5 +3,5 @@ tags={
 	"Economy"
 }
 picture="thumbnail.png"
-name="Original Buildings Modified"
+name="Industries Revamped"
 supported_version="1.0.*"
