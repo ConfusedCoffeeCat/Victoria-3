@@ -13,7 +13,7 @@
  Potentially game breaking (although in limited tests, thus far the AI builds the originals and the new industries and performs as well as it does in vanilla). Future evaluation and balacing to be expected.
 
 
-# Half-sized Industries
+# Half-sized Industries ('Alternative version')
 
  Same as the 'full version', but the industries are halved in sized, doubled in numbers.
 
